@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "Ebrima";
+    src: url("https://fontsforyou.com/fonts/e/Ebrima.ttf");
+}
+.your-style {
+    font-family: "Ebrima";
+}
+*,
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Ebrima;
+    font-size: 62.5%;
+    color: #434343;
+}
+
+a{
+    text-decoration: none;
+    font-size: 2em;
+    color:inherit;
+    font-family: inherit;    
+}
+
+ul, lo{
+    list-style-type: none;
+}
+
+p{
+    font-size: 1.8em;
+}
+
+.container{
+    max-width: 1800px;
+    margin: 0 auto;
+    color: #434343;
+}
+
+
+/*header*/
+
+header {
+    padding: 3em;
+    align-items: end;
+}
+
+img {
+    width: 100%;
+  }
+
+.banner{
+    width: 200px;
+    position: right 18px;   
+}
+
+/*FORMULARIO PRINCIPAL*/
+
+.formularioPrincipal{
+    padding: 3em;
+}
+
+.formulario{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+/*VERSION DE HILUX*/
+
+.versionHiluxPrincipal{
+    padding: 3em;
+}
+
+.versionHilux{
+    background-color: #DFDFDF;
+}
+
+/*DISPONIBLE EN*/
+
+
+/*TOYOTA PLAN*/
+
+.cuadro{
+    background-color: #DFDFDF;
+    text-align: center;
+    padding: 2em;
+}
+.toyotaPlan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30em;
+    padding: 3em ;
+}
+/*RAZONES PARA TENER UNA HILUX*/
+
+*{
+    box-sizing: border-box;
+    color: #434343;
+
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+}
+.titulo{
+    padding: 0.5em;
+}
+.razonesH{
+    padding: 3em;
+}
+
+.titulo {
+    
+    font-size: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+
+
+.autosImagenes {
+    font-size: medium;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+    .autosImagenes h1 {
+    width: 100px;
+    height: 100px;
+  }
+
+
+/*FOOTER*/
+
+.footer{
+    max-width: 1500px;
+    margin: 0 auto;
+    font-size: 1.5em;
+}
+
+.kansai{
+    width: 300px;
+    padding: 10px;
+}
+
+.TitulosFooter{
+    color: red;
+    font-size: 1.5em;
+}

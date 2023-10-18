@@ -72,6 +72,29 @@ img {
     padding: 3em;
 }
 
+@media all and (max-width: 740px) {
+    .versionHiluxPrincipal{
+        margin:0px;
+        display:block;
+        float:none;
+        text-align:center;
+    }
+}
+
+@media all and (max-width: 740px) {
+    .imagenesC{
+        margin:0px;
+        display:block;
+        float:none;
+        text-align:center;
+    }
+}
+
+.carousel-control-prev{
+        color: black;
+        background-color: black;
+    }
+
 .versionHilux{
     background-color: #DFDFDF;
 }
@@ -86,6 +109,83 @@ img {
     margin:auto;
     padding: 3em;
     width:55%;
+}
+
+.circulo {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #ffefef;
+    text-align: center;
+    align-items: center;
+}
+
+.circulo1 {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(239, 228, 248);
+}
+
+.circulo2 {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(70, 122, 180);
+}
+
+.circulo3 {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    background-color:grey;
+}
+
+.circulo4 {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    background-color:black;
+}
+
+.circulo5 {
+    width: 40px;
+    height: 40px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(173, 14, 14);
+}
+
+
+
+
+
+
+.circuloPadre{
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 /*TOYOTA PLAN*/
@@ -167,6 +267,26 @@ img {
 
 
 /*FOOTER*/
+
+@media all and (max-width: 740px) {
+    .detalles{
+        margin:0px;
+        display:block;
+        float:none;
+        text-align:center;
+        padding: 1em;
+    }
+}
+
+@media all and (max-width: 740px) {
+    .vp{
+        margin:0px;
+        display:block;
+        float:none;
+        text-align:center;
+        padding: 2em;
+    }
+}
 
 .detalles{
     max-width: 1500px;

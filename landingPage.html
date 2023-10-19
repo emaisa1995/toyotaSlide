@@ -5,47 +5,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href = "/fonts/NoahText-Heavy/style.css" rel = "stylesheet" type = "text/css" />
   </head>
 
   <body>
 
     <header>
-      <div class="container-fluid">
-        <div class="banner">
-          <picture>
-            <img src="images/Recurso 16.png" class="img-fluid" alt="Toyota Logo">
-          </picture>
+      <div class="positionImg">
+        <div>
+          <div class="banner">
+            <img src="img/Recurso 16.png" class="img-fluid" alt="Toyota Logo" style="text-align: right;">
+          </div>
         </div>
+      </div>
+      <div class="principal">
+        <img src="img/Recurso 1-20.jpg" class="img-fluid" alt="Toyota Auto">
       </div>
     </header>
 
-    <main class="container">
-
-      <!--IMAGEN TOYOTA GRANDE-->
-      <section>
-        <article>
-          <picture>
-            <img src="images/Recurso 1-20.jpg" alt="Toyota Auto">
-          </picture>     
-        </article>
-      </section>
-
+    <main>
       <!--FORMULARIO-->
       <section class="formularioPrincipal">
-        <h1>Contacto</h1>
-        <h5>Dejanos tus datos y nos pondremos en contacto a la brevedad.</h5>
-
+        <div class="formularioS">
+          <h1 style="font-size: 5em;font-weight: bolder">Contacto</h1>
+          <h3>Dejanos tus datos y nos pondremos en contacto a la brevedad.</h3>
+        </div>
         <div class="formularios" style="padding: 2em;">
           
           <div class="row align-items-center">
             <div class="col-12 col-md-6">
               <label for="Nombre y Apellido" class="form-label">Nombre y Apellido</label>
-              <input type="text" class="form-control"></input>
+              <input type="text" class="form-control form-control-lg" style="border-radius: 0%;border-width:0.2em;border-color: rgba(0, 0, 0, 0.349);height: 4em;"></input>
             </div>
             <div class="col-12 col-md-3">
-              <label for="select1">Provincia</label>
-              <select name="" id="select1" class="form-select">
+              <label for="select1" style="padding-bottom: 0.4em;">Provincia</label>
+              <select name="" id="select1" class="form-select" style="border-radius: 0%;border-width:0.2em;border-color: rgba(0, 0, 0, 0.349);height:5em;">
                 <option selected></option>
                 <option value="CORDOBA">CORDOBA</option>
                 <option value="BUENOS AIRES">BUENOS AIRES</option>
@@ -54,8 +48,8 @@
               </select>
             </div>
             <div class="col-12 col-md-3">
-              <label for="select1">Ciudad</label>
-              <select name="select1" id="select1" class="form-select">
+              <label for="select1" style="padding-bottom: 0.4em;">Ciudad</label>
+              <select name="select1" id="select1" class="form-select" style="border-radius: 0%;border-width:0.2em;border-color: rgba(0, 0, 0, 0.349);height:5em;">
                 <option selected></option>
                 <option value="CORDOBA">CORDOBA</option>
                 <option value="BUENOS AIRES">BUENOS AIRES</option>
@@ -67,53 +61,55 @@
     
           <div class="row align-items-center">
             <div class="col-12 col-md-6">
-              <label for="dni" class="form-label">DNI</label>
-              <input type="number" class="form-control" id="dni"></input>
+              <label for="dni" class="form-label">DNI:</label>
+              <input type="number" class="form-control form-control-lg" id="dni" style="border-radius: 0%;border-width:0.2em;border-color: rgba(0, 0, 0, 0.349);height: 4em"></input>
               <div class="row">
 
                 <div class="col-12">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" name="email">
+                  <input type="email" class="form-control form-control-lg" id="email" name="email" style="border-radius: 0%;border-width:0.2em;border-color: rgba(0, 0, 0, 0.349);height: 4em">
                 </div>
               </div>
             </div>
             <div class="col-12 col-md-6">
               <label for="comment">Mensaje:</label>
-                      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                      <textarea class="form-control" rows="4" id="comment" name="text" style="border-radius: 0%;border-width:0.2em;border-color: rgba(0, 0, 0, 0.349);height: 13em"></textarea>
             </div>
           </div>
     
           <div class="row">
             <div class="col-12 col-md-6">
               <label for="phone" class="form-label">Telefono</label>
-              <input type="tel" class="form-control" id="phone" name="phone">
+              <input type="tel" class="form-control form-control-lg" id="phone" name="phone" style="border-radius: 0%;border-width:0.2em;border-color: rgba(0, 0, 0, 0.349);height: 4em">
             </div>
             
             <div class="col-6 col-md-3">
-              <h6>Metodo de Pago</h6>
-              <button type="button" class="btn btn-primary btn-lg col-10">FINANCIADO</button>
+              <label for="phone">Metodo de Pago</label>
+              <div class="botonF">
+                <a href="#" class="ov-btn-slide-right" style="font-size: 0.6em;">Financiado</a>
+              </div>
             </div>
             <div class="col-6 col-md-3">
-              <h6 style="color: white;">m</h6>
-              <button type="button" class="btn btn-secondary btn-lg col-11">CONTADO INMEDIATO</button>
+              <label for="phone" style="color: white;" >Metodo de Pago</label>
+              <div class="botonF">
+                <a href="#" class="ov-btn-slide-right" style="font-size: 0.6em;">Contado inmediato</a>
+              </div>
             </div>
           </div>
     
         </div>
-
-
       </section>
 
       <!--VERSION DE HILUX-->
       <section class="versionHiluxPrincipal">
         <div class="versionHilux" style="text-align: center; padding: 2em;">
-          <h1 style="font-weight: bolder;padding: 1em; margin-block-end:-0.5em">Elegí tu versión de HILUX</h1>
-        <h5>Modelos y precios</h5>
+          <h1 style="font-weight: bolder;padding: 1em; margin-block-end:-0.5em; font-size: 5em;">Elegí tu versión de HILUX</h1>
+        <h3>Modelos y precios</h3>
 
 
           <div>
             <div>
-              <div style="background-color: #DFDFDF; padding: 5em;">
+              <div style="background-color: #DFDFDF; padding: 5em;width: 100%;">
                 <div id="carouselExampleIndicators" class="carousel slide">
                   <div class="conteiner" style="position: relative; margin-top: -3em">
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -131,19 +127,19 @@
                       <h2 style="padding: 1em;font-weight: bolder">HILUX DX 4X4</h2>
                       <div class="row justify-content-start">
                         <div class="col-12 col-md-6" style="text-align: right;">
-                          <img src="/images/Recurso 2-20.jpg" class="img-fluid rounded-start" alt="auto01" style="width: 50em;">
+                          <img src="/img/Recurso 2-20.jpg" class="img-fluid rounded-start" alt="auto01" style="width: 50em;">
                         </div>
                         <div class="col-12 col-md-6 justify-content-center">
                           <div class="imagenesC" style="text-align:left;">
-                            <h2 style="margin-left: 1em;font-weight: bolder">HILUX DX 4X4</h2>
+                            <h2 style="margin-left: 0.5em;font-weight: bolder;font-size: 3em;">HILUX DX 4X4</h2>
                             <a href="">
-                              <h6 style="margin-left: 1em; font-size: medium;">Ver ficha técnica                     ></h6>
+                              <h6 style="margin-left: 1.5em; font-size: medium;">Ver ficha técnica</h6>
                             </a>
                             <p>
                               <div class="container-xxl" style="text-align: center; text-align: justify;">
-                                <div class="row">
+                                <div class="row" style="max-width: 50em;">
                                   <div class="col align-self-start">
-                                    <div class="botonRojo bg-danger">
+                                    <div class="botonRojo bg-danger" style="width: 100%;">
                                       <div class="botonRojoHijo">
                                         <h1 style="font-size: 4em; font-weight: bolder;padding: 0.4em;">$ 11.772.000</h1>
                                       </div>
@@ -161,19 +157,19 @@
                       <h2 style="padding: 1em;font-weight: bolder">HILUX DX 4X4</h2>
                       <div class="row justify-content-start">
                         <div class="col-12 col-md-6" style="text-align: right;">
-                          <img src="/images/Recurso 2-20.jpg" class="img-fluid rounded-start" alt="auto01" style="width: 50em;">
+                          <img src="/img/Recurso 2-20.jpg" class="img-fluid rounded-start" alt="auto01" style="width: 50em;">
                         </div>
                         <div class="col-12 col-md-6 justify-content-center">
-                          <div style="text-align:left;">
-                            <h2 style="margin-left: 1em;font-weight: bolder">HILUX DX 4X4</h2>
+                          <div class="imagenesC" style="text-align:left;">
+                            <h2 style="margin-left: 0.5em;font-weight: bolder;font-size: 3em;">HILUX DX 4X4</h2>
                             <a href="">
-                              <h6 style="margin-left: 1em; font-size: medium;">Ver ficha técnica                     ></h6>
+                              <h6 style="margin-left: 1.5em; font-size: medium;">Ver ficha técnica</h6>
                             </a>
                             <p>
                               <div class="container-xxl" style="text-align: center; text-align: justify;">
-                                <div class="row">
+                                <div class="row" style="max-width: 50em;">
                                   <div class="col align-self-start">
-                                    <div class="botonRojo bg-danger">
+                                    <div class="botonRojo bg-danger" style="width: 100%;">
                                       <div class="botonRojoHijo">
                                         <h1 style="font-size: 4em; font-weight: bolder;padding: 0.4em;">$ 11.772.000</h1>
                                       </div>
@@ -191,19 +187,19 @@
                       <h2 style="padding: 1em;font-weight: bolder">HILUX DX 4X4</h2>
                       <div class="row justify-content-start">
                         <div class="col-12 col-md-6" style="text-align: right;">
-                          <img src="/images/Recurso 2-20.jpg" class="img-fluid rounded-start" alt="auto01" style="width: 50em;">
+                          <img src="/img/Recurso 2-20.jpg" class="img-fluid rounded-start" alt="auto01" style="width: 50em;">
                         </div>
                         <div class="col-12 col-md-6 justify-content-center">
-                          <div style="text-align:left;">
-                            <h2 style="margin-left: 1em;font-weight: bolder">HILUX DX 4X4</h2>
+                          <div class="imagenesC" style="text-align:left;">
+                            <h2 style="margin-left: 0.5em;font-weight: bolder;font-size: 3em;">HILUX DX 4X4</h2>
                             <a href="">
-                              <h6 style="margin-left: 1em; font-size: medium;">Ver ficha técnica                     ></h6>
+                              <h6 style="margin-left: 1.5em; font-size: medium;">Ver ficha técnica</h6>
                             </a>
                             <p>
                               <div class="container-xxl" style="text-align: center; text-align: justify;">
-                                <div class="row">
+                                <div class="row" style="max-width: 50em;">
                                   <div class="col align-self-start">
-                                    <div class="botonRojo bg-danger">
+                                    <div class="botonRojo bg-danger" style="width: 100%;">
                                       <div class="botonRojoHijo">
                                         <h1 style="font-size: 4em; font-weight: bolder;padding: 0.4em;">$ 11.772.000</h1>
                                       </div>
@@ -216,11 +212,7 @@
                         </div>
                       </div>
                     </div>
-
-
                   </div>
-        
-          
                 </div>
               </div>
             </div>
@@ -237,7 +229,7 @@
           <div class="container text-center mt-5">
             <div class="disponibleEn" >
               <figure class="figure">
-                <img src="/images/Recurso 3-20.jpg" class="figure-img img-fluid rounded" alt="...">
+                <img src="/img/Recurso 3-20.jpg" class="figure-img img-fluid rounded" alt="...">
               </figure>
             </div>
           </div>
@@ -266,19 +258,19 @@
           <div class="container text-center mt-5">
             <div class="toyotaPlan" >
               <figure class="figure">
-                <img src="images/Recurso 4.png" class="figure-img img-fluid rounded" alt="...">
+                <img src="img/Recurso 4.png" class="figure-img img-fluid rounded" alt="...">
               </figure>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" style="max-width: 100em;padding: 3em">
               <div class="cuadro">
                 <div>
                   <figure class="figure">
-                    <figcaption class="figure-caption text-center" style="padding-top:1em;font-size: 1.5em;font-weight: bolder;">Financia el 100%</figcaption>
-                    <figcaption class="figure-caption text-center" style="padding: top 1em;font-size: 1.5em;font-weight: bolder;">de tu Hilux doble cabina 4x4</figcaption>
-                    <img src="images/Recurso 5.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption text-center" style="padding-top:1em;font-size: 4em;font-weight: bolder;">Financia el 100%</figcaption>
+                    <figcaption class="figure-caption text-center" style="padding: top 1em;font-size: 4em;font-weight: bolder;">de tu Hilux doble cabina 4x4</figcaption>
+                    <img src="img/Recurso 5.png" class="figure-img img-fluid rounded" alt="...">
                     <figcaption class="figure-caption text-center" style="padding-top:20px; font-size: 1.5em;font-weight: bolder;">HILUX 4X4 C/D DX 2.4 TDI 6M/T</figcaption>
                   </figure>
                 </div> 
@@ -297,17 +289,17 @@
                 </div>
               </div>
               <div class="text-center">
-                <a href="">Conocé más ></a>
+                <a href=""><h2>Conocé más ></h2></a>
               </div>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6" style="max-width: 100em;padding: 3em">
               <div class="cuadro">
                 <div>
                   <figure class="figure">
-                    <figcaption class="figure-caption text-center" style="padding-top:1em;font-size: 1.5em;font-weight: bolder;">Financia el 70%</figcaption>
-                    <figcaption class="figure-caption text-center" style="padding: top 1em;font-size: 1.5em;font-weight: bolder;">de tu Hilux doble cabina 4x2</figcaption>
-                    <img src="images/Recurso 5.png" class="figure-img img-fluid rounded" alt="...">
+                    <figcaption class="figure-caption text-center" style="padding-top:1em;font-size: 4em;font-weight: bolder;">Financia el 100%</figcaption>
+                    <figcaption class="figure-caption text-center" style="padding: top 1em;font-size: 4em;font-weight: bolder;">de tu Hilux doble cabina 4x4</figcaption>
+                    <img src="img/Recurso 5.png" class="figure-img img-fluid rounded" alt="...">
                     <figcaption class="figure-caption text-center" style="padding-top:20px; font-size: 1.5em;font-weight: bolder;">HILUX 4X4 C/D DX 2.4 TDI 6M/T</figcaption>
                   </figure>
                 </div> 
@@ -319,14 +311,14 @@
                     <div class="botonRojo bg-danger mx-auto">
                       <div class="botonRojoHijo">
                         <h1 style="font-size: medium;">Cuota desde</h1>
-                        <h1 style="font-size: 2.5em; font-weight: bolder;">$ 137.200</h1>
+                        <h1 style="font-size: 2.5em; font-weight: bolder;">$ 195.000</h1>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="text-center">
-                <a href="">Conocé más ></a>
+                <a href=""><h2>Conocé más ></h2></a>
               </div>
             </div>
           </div>
@@ -342,7 +334,7 @@
             <div class="col-6 col-md-4" style="padding: 2em;">
               <div>
                 <figure class="figure">
-                  <img src="images/Recurso 8-20.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <img src="img/Recurso 8-20.jpg" class="figure-img img-fluid rounded" alt="...">
                   <figcaption class="figure-caption text-center" style="padding-top:20px;font-weight: bolder;font-size: medium;">DISEÑO EXTERIOR</figcaption>
                 </figure>
               </div>
@@ -351,7 +343,7 @@
             <div class="col-6 col-md-4" style="padding: 2em;">
               <div>
                 <figure class="figure">
-                  <img src="images/Recurso 9-20.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <img src="img/Recurso 9-20.jpg" class="figure-img img-fluid rounded" alt="...">
                   <figcaption class="figure-caption text-center" style="padding-top:20px;font-weight: bolder;font-size: medium;">CONFORT INTERIOR</figcaption>
                 </figure>
               </div>
@@ -360,7 +352,7 @@
             <div class="col-6 col-md-4" style="padding: 2em;">
               <div>
                 <figure class="figure">
-                  <img src="images/Recurso 10-20.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <img src="img/Recurso 10-20.jpg" class="figure-img img-fluid rounded" alt="...">
                   <figcaption class="figure-caption text-center" style="padding-top:20px;font-weight: bolder;font-size: medium;">CONECTIVIDAD</figcaption>
                 </figure>
               </div>
@@ -369,7 +361,7 @@
             <div class="col-6 col-md-4" style="padding: 2em;">
               <div>
                 <figure class="figure">
-                  <img src="images/Recurso 11-20.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <img src="img/Recurso 11-20.jpg" class="figure-img img-fluid rounded" alt="...">
                   <figcaption class="figure-caption text-center" style="padding-top:20px;font-weight: bolder;font-size: medium;">MOTOR Y PERFORMANCE</figcaption>
                 </figure>
               </div>
@@ -378,7 +370,7 @@
             <div class="col-6 col-md-4" style="padding: 2em;">
               <div>
                 <figure class="figure">
-                  <img src="images/Recurso 12-20.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <img src="img/Recurso 12-20.jpg" class="figure-img img-fluid rounded" alt="...">
                   <figcaption class="figure-caption text-center" style="padding-top:20px;font-weight: bolder;font-size: medium;">SEGURIDAD</figcaption>
                 </figure>
               </div>
@@ -387,7 +379,7 @@
             <div class="col-6 col-md-4" style="padding: 2em;">
               <div>
                 <figure class="figure">
-                  <img src="images/Recurso 13-20.jpg" class="figure-img img-fluid rounded" alt="...">
+                  <img src="img/Recurso 13-20.jpg" class="figure-img img-fluid rounded" alt="...">
                   <figcaption class="figure-caption text-center" style="padding-top:20px;font-weight: bolder;font-size: medium;">TOYOTA SAFETY SENSE*</figcaption>
                 </figure>
               </div>
@@ -406,7 +398,7 @@
             <div class="conteiner text-align-center col-12 text-align-top col-md-4">
               <div class="kansai">
                 <picture >
-                  <img class="img-fluid" src="/images/Recurso 15.png" alt="kansai" style="max-width: 9em;">
+                  <img class="img-fluid" src="img/Recurso 15.png" alt="kansai" style="max-width: 9em;">
                 </picture>
               </div>
               <article>
@@ -418,7 +410,7 @@
 
             <div class="col-6 col-md-3">
               <article class="vp">
-                <h5 class="TitulosFooter" >VENTAS</h5>
+                <h5 class="TitulosFooter" style="font-size:1em;" >VENTAS</h5>
                 <p class="small text-dark mb-1">Casa Central | Av. Rivadavia 8981, CABA</p>
                 <p class="small text-dark">Tel: (011) 4670-7000</p>
                 <p class="small text-dark mb-1">Caballito | Av. Rivadavia 6102, CABA</p>
@@ -430,7 +422,7 @@
 
             <div class="col-6 col-md-3">
               <article class="vp">
-                <h5 class="TitulosFooter">POSVENTA</h5>
+                <h5 class="TitulosFooter" style="font-size: 1em;">POSVENTA</h5>
                 <p class="small text-dark mb-1">Villa Luro | Yerbal 4586, CABA</p>
                 <p class="small text-dark mb-1">Caballito | Donato Álvarez 1350, CABA</p>
                 <p class="small text-dark">Tel: (011) 7079-1111</p>
@@ -442,7 +434,7 @@
             <div class="col-2">
               <div class="d-none d-md-block" style="position: absolute;">
                 <a href="" class="btn-flotante">
-                  <img src="/images/Recurso 14.png" alt="" style="max-width: 4em;">
+                  <img src="img/Recurso 14.png" alt="" style="max-width: 4em;">
                 </a>
               </div>
             </div>
@@ -453,6 +445,8 @@
       </div>
 
     </footer>
+
+  </div>
 
   </body>
 </html>

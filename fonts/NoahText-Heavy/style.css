@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Noah';
+    src: local('Noah Text Heavy'), local('Noah-Text-Heavy'),
+        url('NoahText-Heavy.woff2') format('woff2'),
+        url('NoahText-Heavy.woff') format('woff'),
+        url('NoahText-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
